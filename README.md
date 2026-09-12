@@ -2,7 +2,13 @@
 
 Codex 작업이 복잡해지기만 하고 원래 목표는 멀어질 때, 다음 행동을 다시 정렬하는 작은 스킬입니다. 개발·연구·학습 프로젝트에서 기존 지시와 작업 기록을 이어받습니다.
 
-Experimental v0.2.0. One instruction skill; no server, API key, background process or required evaluation framework. It helps preserve intended outcomes and question unnecessary work. It does not mechanically enforce behavior or guarantee lower cost.
+Experimental v0.2.1. One instruction skill; no server, API key, background process or required evaluation framework. It helps preserve intended outcomes and question unnecessary work. It does not mechanically enforce behavior or guarantee lower cost.
+
+## v0.2.1: 필요한 검증은 남기고 유효한 결과는 재사용
+
+현재 요구·파일 버전·관련 환경에 맞는 신뢰할 만한 검사 결과가 있으면, 마무리 확인만을 위해 반복하지 않도록 검증 문단을 보완했습니다. 변경됐거나 범위가 맞지 않는 증거는 재사용하지 않습니다.
+
+추가 API 실험은 24회, 약 **$0.0119**였습니다. 제한된 재검사 과제에서 스킬 없음 3/8, v0.2 3/8, 수정안 5/8 성공을 관찰했지만 일반적 성능 향상은 미확인입니다. 전체 검사 횟수는 줄지 않았고 수정안 비용은 v0.2보다 약 1.9% 늘었습니다. 실패와 비용을 포함한 [과제·기존 벤치마크 검토·전체 결과·재현 방법](docs/evaluation.md)을 공개합니다. 선택적 평가 스크립트만 API 키를 사용하며 **스킬 사용에는 키가 필요 없습니다.**
 
 ## v0.2: 철학과 행동과학을 실행 규칙으로
 
@@ -96,6 +102,7 @@ Issues에서 “원래 목표 / 스킬이 한 일 / 실제 결과 / 불필요해
 - `skills/involution-guard/`: 유일한 실행 지침과 선택적 참고자료
 - `docs/design.md`: 철학·행동과학적 근거·구현과 전이 한계
 - `docs/evidence.md`: 계획·검토 결정, 검증과 남은 한계
+- `docs/evaluation.md`, `evals/`: 선택적 저비용 평가의 방법·코드·합성 결과 (일상 실행에 로드하지 않음)
 - `.github/ISSUE_TEMPLATE/feedback.md`: 공개 피드백 양식
 
 MIT licensed. Independent community project; not an official OpenAI product.

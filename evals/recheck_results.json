@@ -1,0 +1,727 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "reasoning": "none",
+  "manifest": {
+    "model": "gpt-5.4-nano",
+    "reasoning": "none",
+    "base_revision": "c6a58f034cb2c8f71b66d0e21264a3ffbe953685",
+    "skill_hashes": {
+      "none": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+      "before": "f8f9657c6701ac80aa0522316987f0d65c81b84ecd18b2684a2b400d19daa988",
+      "after": "ba27a1089bb5af4f0a49455f55f146edd59f77d28b351e72dd6944fee9951963"
+    },
+    "plan": [
+      [
+        "data_changed",
+        "after",
+        1
+      ],
+      [
+        "fresh",
+        "after",
+        1
+      ],
+      [
+        "unit_only",
+        "before",
+        0
+      ],
+      [
+        "environment_changed",
+        "before",
+        1
+      ],
+      [
+        "data_changed",
+        "before",
+        0
+      ],
+      [
+        "data_changed",
+        "after",
+        0
+      ],
+      [
+        "data_changed",
+        "before",
+        1
+      ],
+      [
+        "unit_only",
+        "before",
+        1
+      ],
+      [
+        "environment_changed",
+        "none",
+        1
+      ],
+      [
+        "unit_only",
+        "none",
+        0
+      ],
+      [
+        "environment_changed",
+        "after",
+        0
+      ],
+      [
+        "fresh",
+        "none",
+        1
+      ],
+      [
+        "environment_changed",
+        "before",
+        0
+      ],
+      [
+        "unit_only",
+        "after",
+        1
+      ],
+      [
+        "unit_only",
+        "after",
+        0
+      ],
+      [
+        "environment_changed",
+        "after",
+        1
+      ],
+      [
+        "fresh",
+        "after",
+        0
+      ],
+      [
+        "data_changed",
+        "none",
+        1
+      ],
+      [
+        "fresh",
+        "none",
+        0
+      ],
+      [
+        "data_changed",
+        "none",
+        0
+      ],
+      [
+        "environment_changed",
+        "none",
+        0
+      ],
+      [
+        "fresh",
+        "before",
+        1
+      ],
+      [
+        "unit_only",
+        "none",
+        1
+      ],
+      [
+        "fresh",
+        "before",
+        0
+      ]
+    ],
+    "budget_cap": 0.27,
+    "seed": 20260912
+  },
+  "api_calls": 40,
+  "estimated_usd_uncached_upper": 0.011893950000000004,
+  "reserved_usd": 0.0859888,
+  "results": [
+    {
+      "case": "data_changed",
+      "arm": "after",
+      "repeat": 1,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 15,
+          "receipt_id": "fbab5c0264d5c611573db4f15e2172a3b02a035ea4b1362a737d44da3c294325"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": false,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 3079.0,
+      "output_tokens": 74.0,
+      "estimated_usd": 0.0007083
+    },
+    {
+      "case": "fresh",
+      "arm": "after",
+      "repeat": 1,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": true,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 3038.0,
+      "output_tokens": 72.0,
+      "estimated_usd": 0.0006976
+    },
+    {
+      "case": "unit_only",
+      "arm": "before",
+      "repeat": 0,
+      "success": false,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "unit"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "2b2b0ca989f42fffc9d6ce706c3655f5dba93da69ab7f2aed173f07d80ce320c"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "unit",
+          "redundant": false,
+          "irrelevant": true,
+          "passed": true
+        }
+      ],
+      "input_tokens": 2926.0,
+      "output_tokens": 75.0,
+      "estimated_usd": 0.00067895
+    },
+    {
+      "case": "environment_changed",
+      "arm": "before",
+      "repeat": 1,
+      "success": false,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "check",
+          "scope": "unit"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": false,
+          "irrelevant": false,
+          "passed": true
+        },
+        {
+          "scope": "unit",
+          "redundant": true,
+          "irrelevant": true,
+          "passed": true
+        }
+      ],
+      "input_tokens": 5004.0,
+      "output_tokens": 88.0,
+      "estimated_usd": 0.0011108000000000001
+    },
+    {
+      "case": "data_changed",
+      "arm": "before",
+      "repeat": 0,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 15,
+          "receipt_id": "fbab5c0264d5c611573db4f15e2172a3b02a035ea4b1362a737d44da3c294325"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": false,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 3009.0,
+      "output_tokens": 74.0,
+      "estimated_usd": 0.0006943
+    },
+    {
+      "case": "data_changed",
+      "arm": "after",
+      "repeat": 0,
+      "success": false,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 1340.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.00033800000000000003
+    },
+    {
+      "case": "data_changed",
+      "arm": "before",
+      "repeat": 1,
+      "success": false,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 1305.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.000331
+    },
+    {
+      "case": "unit_only",
+      "arm": "before",
+      "repeat": 1,
+      "success": false,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "unit"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "2b2b0ca989f42fffc9d6ce706c3655f5dba93da69ab7f2aed173f07d80ce320c"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "unit",
+          "redundant": false,
+          "irrelevant": true,
+          "passed": true
+        }
+      ],
+      "input_tokens": 2926.0,
+      "output_tokens": 75.0,
+      "estimated_usd": 0.00067895
+    },
+    {
+      "case": "environment_changed",
+      "arm": "none",
+      "repeat": 1,
+      "success": false,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 492.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.00016840000000000003
+    },
+    {
+      "case": "unit_only",
+      "arm": "none",
+      "repeat": 0,
+      "success": false,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "unit"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "2b2b0ca989f42fffc9d6ce706c3655f5dba93da69ab7f2aed173f07d80ce320c"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "unit",
+          "redundant": false,
+          "irrelevant": true,
+          "passed": true
+        }
+      ],
+      "input_tokens": 1324.0,
+      "output_tokens": 75.0,
+      "estimated_usd": 0.00035855
+    },
+    {
+      "case": "environment_changed",
+      "arm": "after",
+      "repeat": 0,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "f08e7bc6af69c4275033c61b31f0998a246a6790d0d9e089070897268318b8b1"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": false,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 3032.0,
+      "output_tokens": 74.0,
+      "estimated_usd": 0.0006989
+    },
+    {
+      "case": "fresh",
+      "arm": "none",
+      "repeat": 1,
+      "success": true,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 494.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.0001688
+    },
+    {
+      "case": "environment_changed",
+      "arm": "before",
+      "repeat": 0,
+      "success": false,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 1293.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.0003286
+    },
+    {
+      "case": "unit_only",
+      "arm": "after",
+      "repeat": 1,
+      "success": false,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "unit"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "2b2b0ca989f42fffc9d6ce706c3655f5dba93da69ab7f2aed173f07d80ce320c"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "unit",
+          "redundant": false,
+          "irrelevant": true,
+          "passed": true
+        }
+      ],
+      "input_tokens": 2996.0,
+      "output_tokens": 75.0,
+      "estimated_usd": 0.0006929500000000001
+    },
+    {
+      "case": "unit_only",
+      "arm": "after",
+      "repeat": 0,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "unit"
+        },
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "unit",
+          "redundant": false,
+          "irrelevant": true,
+          "passed": true
+        },
+        {
+          "scope": "public",
+          "redundant": false,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 5054.0,
+      "output_tokens": 88.0,
+      "estimated_usd": 0.0011208000000000001
+    },
+    {
+      "case": "environment_changed",
+      "arm": "after",
+      "repeat": 1,
+      "success": false,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 1328.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.0003356
+    },
+    {
+      "case": "fresh",
+      "arm": "after",
+      "repeat": 0,
+      "success": true,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 1330.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.00033600000000000004
+    },
+    {
+      "case": "data_changed",
+      "arm": "none",
+      "repeat": 1,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 15,
+          "receipt_id": "fbab5c0264d5c611573db4f15e2172a3b02a035ea4b1362a737d44da3c294325"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": false,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 1407.0,
+      "output_tokens": 74.0,
+      "estimated_usd": 0.00037390000000000004
+    },
+    {
+      "case": "fresh",
+      "arm": "none",
+      "repeat": 0,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": true,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 1366.0,
+      "output_tokens": 72.0,
+      "estimated_usd": 0.00036320000000000005
+    },
+    {
+      "case": "data_changed",
+      "arm": "none",
+      "repeat": 0,
+      "success": false,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 15,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 504.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.00017080000000000003
+    },
+    {
+      "case": "environment_changed",
+      "arm": "none",
+      "repeat": 0,
+      "success": false,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 492.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.00016840000000000003
+    },
+    {
+      "case": "fresh",
+      "arm": "before",
+      "repeat": 1,
+      "success": true,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "public"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "public",
+          "redundant": true,
+          "irrelevant": false,
+          "passed": true
+        }
+      ],
+      "input_tokens": 2968.0,
+      "output_tokens": 72.0,
+      "estimated_usd": 0.0006836000000000001
+    },
+    {
+      "case": "unit_only",
+      "arm": "none",
+      "repeat": 1,
+      "success": false,
+      "actions": [
+        {
+          "action": "check",
+          "scope": "unit"
+        },
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "2b2b0ca989f42fffc9d6ce706c3655f5dba93da69ab7f2aed173f07d80ce320c"
+        }
+      ],
+      "checks": [
+        {
+          "scope": "unit",
+          "redundant": false,
+          "irrelevant": true,
+          "passed": true
+        }
+      ],
+      "input_tokens": 1324.0,
+      "output_tokens": 75.0,
+      "estimated_usd": 0.00035855
+    },
+    {
+      "case": "fresh",
+      "arm": "before",
+      "repeat": 0,
+      "success": true,
+      "actions": [
+        {
+          "action": "finish",
+          "total": 8,
+          "receipt_id": "879dfc0dee00e4e9a49cf35e0314b2d8e261a954b327d7462459125385821e16"
+        }
+      ],
+      "checks": [],
+      "input_tokens": 1295.0,
+      "output_tokens": 56.0,
+      "estimated_usd": 0.00032900000000000003
+    }
+  ]
+}

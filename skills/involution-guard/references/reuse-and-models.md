@@ -15,6 +15,8 @@ Read only when choosing an evaluation tool or model. Reviewed 2026-09-12. These 
 
 Existing project review workflows take precedence. Reuse their findings instead of adding a second review gate. No dependency is needed for the core skill. Add an adapter or metric only after a real case exposes a gap in an upstream tool.
 
+For a strict dollar cap, inspect when budget limits are enforced. The reviewed agent-skill-eval guards run after each case, so they alone cannot prevent a single expensive call. Reserve bounded input/output cost before any paid call; include retries, judges and hosted tools. Do not equate subscription CLI usage with a verified API-dollar ceiling.
+
 ## Model strengths are conditional
 
 The [official OpenAI model comparison](https://developers.openai.com/api/docs/models/compare) describes Astra for difficult end-to-end work, Sol for complex professional work, and Terra as balancing capability and cost. [Luna](https://developers.openai.com/api/docs/models/gpt-5.6-luna) targets cost-sensitive workloads. This suggests candidate roles, not verified superiority:

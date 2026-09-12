@@ -1,5 +1,9 @@
 # Design and evidence
 
+## v0.2.1 — metered restricted-action test
+
+See [the task design, upstream benchmark review, budget and complete results](evaluation.md). A 24-episode API test compared no skill, v0.2 and a narrow evidence-reuse correction. Success was 3/8, 3/8 and 5/8 respectively; full check counts did not decline and candidate API cost slightly increased. Total uncached-rate estimate $0.01189395, 40 calls. This is a small GPT-5.4 nano restricted-action experiment, not a Codex CLI benchmark or proof of general benefit. All cases and candidate wording were fixed before the first API call; no live rerun followed results.
+
 ## v0.2.0 — before/after comparison, 2026-09-12
 
 Plan preceded one independent reviewer considering PM, maintenance and research validity. Accepted changes: distinguish disciplinary roles rather than superiority; preserve existing assets and switching costs; no deletion authority, arbitrary retry cap or new workflow. Replaced three existing skill questions. [Philosophy, sources and implementation](design.md).

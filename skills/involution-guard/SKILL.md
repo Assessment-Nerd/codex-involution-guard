@@ -28,7 +28,7 @@ Continue within existing authorization. Ask only when a missing choice materiall
 
 ## Check results without building another project
 
-Define observable acceptance before judging improvement. Verify the user-facing path in proportion to what changed, including a relevant correction or recovery when that is the failure. Code inspection, static validation, mocked tests, live execution and user acceptance are different evidence levels. Do not close the original objective because an internal component passed.
+Define observable acceptance before judging improvement. Reuse trustworthy results that cover the current requirement, artifact version and relevant environment; do not rerun them merely to reassure or close a task. If evidence is missing, stale, mismatched or invalidated by a change, run the smallest relevant check, including the user-facing path or recovery when needed. Code inspection, static checks, mocks, live execution and user acceptance are different evidence levels; a component pass does not complete the original outcome.
 
 First compare whether required outcomes were preserved; then consider time, tokens, user intervention and maintenance burden. Do not reward a cheaper incomplete result. Missing measurements remain unknown. Keep failed attempts visible when reporting recovery. A count of files, citations or tests is not itself user value.
 
