@@ -1,0 +1,9 @@
+.codex-shared/
+.env
+.env.*
+!.env.example
+.plugin-eval/
+node_modules/
+*.log
+__pycache__/
+.DS_Store
