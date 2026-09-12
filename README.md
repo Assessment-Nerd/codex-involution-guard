@@ -6,7 +6,7 @@
 
 A lightweight skill that helps Codex preserve the user's intended outcome when work drifts, repeats ineffective attempts, or accumulates unnecessary process. It supports development, research and learning using relevant instructions and existing project records.
 
-Experimental v0.2.1. No server, API key, background process or required evaluation framework. It guides decisions; it does not enforce behavior or guarantee improved performance or lower cost.
+Experimental community skill. [Current release](https://github.com/Assessment-Nerd/codex-involution-guard/releases/tag/v0.2.1) · [All release notes](https://github.com/Assessment-Nerd/codex-involution-guard/releases). No server, API key, background process or required evaluation framework. It guides decisions; it does not enforce behavior or guarantee improved performance or lower cost.
 
 ### What it does
 
@@ -88,25 +88,15 @@ Our contribution is a small set of outcome-recovery, action-value and evidence-b
 
 Model descriptions are candidate roles, not fixed rankings or proven superiority. Distinguish supplier claims from local observations; keep the current model unless a specific limitation justifies changing it.
 
-### Changes and evaluation limits
+### Evidence and limitations
 
-v0.2 clarified three existing questions using behavioral-science-informed design. v0.2.1 refined verification: reuse trustworthy results for the current requirement, version and environment; check missing or invalidated evidence. No mandatory review gate or runtime dependency was added.
+Small pilots do not establish general performance gains, safety or cost savings. The restricted-action API experiment is not a full Codex coding benchmark; failures and increased costs are reported alongside successes.
 
-Early six-case pilots were mostly short decision scenarios; both conditions passed. They did not demonstrate incremental effectiveness.
-
-A later restricted-action API experiment used four evidence states, three conditions and two repeats: 24 episodes / 40 calls with GPT-5.4 nano. It executed small in-memory CSV/HTML checks, not a full Codex coding workflow.
-
-| Condition | Success | Total checks | Redundant checks |
-| --- | --- | --- | --- |
-| No skill | 3/8 | 4 | 1 |
-| v0.2 | 3/8 | 6 | 2 |
-| v0.2.1 candidate | 5/8 | 6 | 1 |
-
-Estimated API cost at uncached published rates was **$0.01189395**, below the $0.30 experiment budget—not an invoice total or total development/subscription cost. Candidate cost was about 1.9% higher than v0.2; total checks did not decline. Three candidate runs still accepted stale or insufficient evidence. **This small experiment does not establish general performance gains, safety or cost savings.**
-
-[Evidence history (English)](docs/evidence.md) · [Full methodology and reproduction (Korean)](docs/evaluation.md) · [Code](evals/recheck_probe.py) · [All synthetic results](evals/recheck_results.json). Only the optional paid experiment requires an API key; **the skill does not**. Rerunning the experiment incurs new charges.
+[Evidence history (English)](docs/evidence.md) · [Methodology and reproduction (Korean)](docs/evaluation.md) · [Code](evals/recheck_probe.py) · [Synthetic results](evals/recheck_results.json). Only the optional paid experiment requires an API key; using the skill does not. Version-specific changes belong in [GitHub Releases](https://github.com/Assessment-Nerd/codex-involution-guard/releases).
 
 ### Feedback, files and license
+
+This is a public, MIT-licensed open-source project. Issues and pull requests are welcome. For a small fix, submit a focused PR; for a larger behavior change, open an issue first with the intended outcome, evidence and trade-offs. Keep changes lightweight, preserve safety and scope, and include a reproducible case. Do not claim improved performance without a comparable evaluation. Contributions are reviewed; acceptance is not automatic. Keep release notes English-first, then Korean. Version-specific notes live in GitHub Releases, without a duplicate changelog.
 
 Share the [repository](https://github.com/Assessment-Nerd/codex-involution-guard) and post in [the feedback issue](https://github.com/Assessment-Nerd/codex-involution-guard/issues/1) or a new issue. Include the original outcome, sanitized reproduction, version/host/model, actual behavior/result, and unnecessary process. Counterexamples—scope shrinkage, excessive review, premature stopping or omitted checks—are especially useful.
 
@@ -128,15 +118,9 @@ Codex 작업이 복잡해지기만 하고 원래 목표는 멀어질 때, 다음
 
 모든 프로젝트를 상시 감시하거나 모든 대화를 자동으로 기억하지 않습니다. 자동 모델 배정·비용 상한 강제 기능도 아닙니다. 접근 가능한 관련 맥락을 바탕으로 판단을 돕고, 사용자 목표를 버리지 않은 채 방법을 바꾸도록 안내합니다.
 
-실험 버전 v0.2.1. 서버·API 키·백그라운드 프로세스·평가 프레임워크 없이 사용하는 지침형 스킬입니다. 판단을 돕지만 행동을 강제하거나 성능 향상·비용 절감을 보장하지 않습니다.
+실험적인 커뮤니티 스킬입니다. [현재 릴리스](https://github.com/Assessment-Nerd/codex-involution-guard/releases/tag/v0.2.1) · [전체 릴리스 노트](https://github.com/Assessment-Nerd/codex-involution-guard/releases). 서버·API 키·백그라운드 프로세스·평가 프레임워크 없이 사용하는 지침형 스킬입니다. 판단을 돕지만 행동을 강제하거나 성능 향상·비용 절감을 보장하지 않습니다.
 
-### v0.2.1: 필요한 검증은 남기고 유효한 결과는 재사용
-
-현재 요구·파일 버전·관련 환경에 맞는 신뢰할 만한 검사 결과가 있으면, 마무리 확인만을 위해 반복하지 않도록 검증 문단을 보완했습니다. 변경됐거나 범위가 맞지 않는 증거는 재사용하지 않습니다.
-
-추가 API 실험은 24회, 약 **$0.0119**였습니다. 제한된 재검사 과제에서 스킬 없음 3/8, v0.2 3/8, 수정안 5/8 성공을 관찰했지만 일반적 성능 향상은 미확인입니다. 전체 검사 횟수는 줄지 않았고 수정안 비용은 v0.2보다 약 1.9% 늘었습니다. 실패와 비용을 포함한 [과제·기존 벤치마크 검토·전체 결과·재현 방법](docs/evaluation.md)을 공개합니다. 선택적 평가 스크립트만 API 키를 사용하며 **스킬 사용에는 키가 필요 없습니다.**
-
-### v0.2: 철학과 행동과학을 실행 규칙으로
+### 철학과 행동과학을 실행 규칙으로
 
 인류학의 인볼루션은 **무엇이 문제인지 보는 관점**, 심리학은 **추가·지속·전환을 판단하는 행동 가설**, 기존 프로젝트는 **구현·평가 방법의 참고 대상**으로 구분했습니다. 인간 연구에서 나온 원리를 LLM에도 입증된 기제라고 주장하지 않습니다.
 
@@ -144,7 +128,7 @@ Codex 작업이 복잡해지기만 하고 원래 목표는 멀어질 때, 다음
 - 몰입 상승 연구 → 이미 쓴 비용만으로 계속하지 않고, 현재 쓸 수 있는 자산과 앞으로의 비용·전환 위험을 비교합니다.
 - 자기조절·실행의도 → 목표와 현재 증거의 차이를 확인하고, 특정 상황에서 할 행동을 명확히 합니다.
 
-기존 실행 질문 세 곳만 바꾸었고, 새 점수표·강제 회의·의존성은 없습니다. **필수 검증을 없애거나, 정당한 재시도를 막거나, 사용자 목표를 축소하는 ‘효율화’는 허용하지 않습니다.** [철학 → 연구 근거 → 전이 가설 → 구현 설명](docs/design.md)과 [전후 비교 결과](docs/evidence.md)를 확인하세요. 이론 설명은 매 실행마다 읽히지 않습니다.
+점수표·강제 회의·실행 의존성을 요구하지 않습니다. **필수 검증을 없애거나, 정당한 재시도를 막거나, 사용자 목표를 축소하는 ‘효율화’는 허용하지 않습니다.** [철학 → 연구 근거 → 전이 가설 → 구현 설명](docs/design.md)과 [전후 비교 결과](docs/evidence.md)를 확인하세요. 이론 설명은 매 실행마다 읽히지 않습니다.
 
 ### 어떤 문제와 개념에서 출발했나
 
@@ -216,6 +200,10 @@ Codex supports user-level skills and linked folders. If the skill does not appea
 모델별 장점도 고정 순위 대신 작업별 후보로 관리합니다. 공식 설명과 실제 관측을 구분하고, 현재 모델로 해결되지 않는 구체적 이유가 있을 때 추가 비용을 검토합니다. [선택적으로 읽는 도구·모델 안내](skills/involution-guard/references/reuse-and-models.md).
 
 ### 검증과 피드백
+
+공개 MIT 라이선스 오픈소스 프로젝트이며 Issues와 Pull Requests로 참여할 수 있습니다. 작은 수정은 범위를 좁힌 PR로, 큰 행동 변경은 원래 목표·근거·장단점을 담은 이슈로 먼저 제안해 주세요. 가벼운 구조와 안전·요구 보존을 유지하고 재현 사례를 포함해 주세요. 비교 평가 없이 성능 향상을 주장하지 않습니다. 기여는 검토 후 반영하며 자동 수락은 아닙니다. 버전별 변경 기록은 별도 CHANGELOG 없이 [GitHub Releases](https://github.com/Assessment-Nerd/codex-involution-guard/releases)에 영어 먼저·한국어 다음으로 관리합니다.
+
+작은 실험만으로 일반 성능·안전성·비용 절감이 입증된 것은 아닙니다. 제한된 API 행동 실험은 Codex 전체 코딩 벤치마크가 아니며, 실패와 증가한 비용도 [평가 문서](docs/evaluation.md)에 함께 공개합니다.
 
 [설계 결정·검증 범위](docs/evidence.md)를 확인하세요. 기존 개인 작업에서 발견된 패턴은 일반화한 합성 사례로만 공개합니다. 실제 원문 대화, 연구자료, 로컬 경로, 인증정보는 포함하지 않습니다.
 
