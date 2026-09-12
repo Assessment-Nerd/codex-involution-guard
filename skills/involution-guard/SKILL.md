@@ -17,10 +17,10 @@ Keep a short working statement of the intended result, essential constraints, ev
 
 At a meaningful checkpoint, inspect these questions internally:
 
-- Does the next step satisfy a requirement or resolve an uncertainty that changes a decision?
+- Does the next step close a gap to the intended result or reduce an uncertainty that changes a decision? A failed experiment can provide progress through new evidence; activity alone cannot.
 - Can an existing implementation, skill, source or accepted result do it? Inspect that candidate before rebuilding it. Competitor features are options, not permission to replace the user's objective.
-- Are we adding a document, dependency, agent, rule or repeated test without a specific benefit? Keep necessary validity, safety, source and recovery checks.
-- If a previous attempt failed, what new evidence or changed condition makes another attempt useful? Try an available alternative; report a concrete dependency if none remains. Do not abandon requested monitoring because nothing changed.
+- Before adding a document, dependency, agent, rule or repeated test, consider reuse, consolidation or omission that preserves the requirements. Add what has a specific benefit; retain necessary validity, safety, source and recovery checks. This is not authorization to delete assets.
+- When deciding whether to persist, compare future benefit and cost, including usable existing assets and switching risk, rather than justifying effort by irrecoverable past investment. If an attempt failed, use new evidence or changed conditions to justify retrying; otherwise choose an informative alternative or report the concrete dependency. Change the method, not the user's outcome without agreement. No fixed failure count forces abandonment; unchanged requested monitoring is not failure.
 
 Act on the smallest change that advances the full outcome. For a trivial request, complete it directly without a review or persistent record. For a substantial change, use the project's existing planning and review process once; honor an explicitly requested plan-before-review-before-build sequence. Independent reviewers are optional unless requested or required; do not simulate independent review with role labels.
 

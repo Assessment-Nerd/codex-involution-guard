@@ -2,7 +2,17 @@
 
 Codex 작업이 복잡해지기만 하고 원래 목표는 멀어질 때, 다음 행동을 다시 정렬하는 작은 스킬입니다. 개발·연구·학습 프로젝트에서 기존 지시와 작업 기록을 이어받습니다.
 
-Experimental v0.1.0. One instruction skill; no server, API key, background process or required evaluation framework. It helps preserve intended outcomes and question unnecessary work. It does not mechanically enforce behavior or guarantee lower cost.
+Experimental v0.2.0. One instruction skill; no server, API key, background process or required evaluation framework. It helps preserve intended outcomes and question unnecessary work. It does not mechanically enforce behavior or guarantee lower cost.
+
+## v0.2: 철학과 행동과학을 실행 규칙으로
+
+인류학의 인볼루션은 **무엇이 문제인지 보는 관점**, 심리학은 **추가·지속·전환을 판단하는 행동 가설**, 기존 프로젝트는 **구현·평가 방법의 참고 대상**으로 구분했습니다. 인간 연구에서 나온 원리를 LLM에도 입증된 기제라고 주장하지 않습니다.
+
+- 더하기 편향 연구 → 구조를 추가하기 전에 재사용·통합·생략 대안을 고려합니다.
+- 몰입 상승 연구 → 이미 쓴 비용만으로 계속하지 않고, 현재 쓸 수 있는 자산과 앞으로의 비용·전환 위험을 비교합니다.
+- 자기조절·실행의도 → 목표와 현재 증거의 차이를 확인하고, 특정 상황에서 할 행동을 명확히 합니다.
+
+기존 실행 질문 세 곳만 바꾸었고, 새 점수표·강제 회의·의존성은 없습니다. **필수 검증을 없애거나, 정당한 재시도를 막거나, 사용자 목표를 축소하는 ‘효율화’는 허용하지 않습니다.** [철학 → 연구 근거 → 전이 가설 → 구현 설명](docs/design.md)과 [전후 비교 결과](docs/evidence.md)를 확인하세요. 이론 설명은 매 실행마다 읽히지 않습니다.
 
 ## 어떤 문제와 개념에서 출발했나
 
@@ -84,6 +94,7 @@ Issues에서 “원래 목표 / 스킬이 한 일 / 실제 결과 / 불필요해
 ## 파일 안내
 
 - `skills/involution-guard/`: 유일한 실행 지침과 선택적 참고자료
+- `docs/design.md`: 철학·행동과학적 근거·구현과 전이 한계
 - `docs/evidence.md`: 계획·검토 결정, 검증과 남은 한계
 - `.github/ISSUE_TEMPLATE/feedback.md`: 공개 피드백 양식
 
