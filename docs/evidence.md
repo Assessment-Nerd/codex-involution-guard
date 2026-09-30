@@ -1,5 +1,9 @@
 # Design and evidence
 
+## Unreleased — trace-derived development cycle, 2026-09-30
+
+[English/Korean report](trajectory-evaluation.md) · [Sanitized results](../evals/trajectory_results.json) · [Reusable offline task](../evals/contract_replay/README.md). Private usage records informed three discovery families, a richer chronological-context A/B and an independently prepared literature continuation/control. No incremental benefit justified installing the exploratory 652-word candidate; the 610-word runtime stays unchanged. Existing-skill code repair reduced deterministic substitute calls from 10 to 4 across two requests with required quality and review retained—not a skill-effect or live-cost claim. Raw grader failures, subsequent adjudication, candidate prose defect, executed failures and scope/activation limits are preserved. Optional evaluation assets add no runtime dependency or plugin. This is development evidence, not a release or established quantum leap.
+
 ## Unreleased — usage-informed workflow cycle, 2026-09-30
 
 [English/Korean review, complete methods and caveats](workflow-evaluation.md) · [Sanitized artifacts and results](../evals/workflow_results.json). Targeted actual-use audit informed shared-cause repair, phase prerequisites and dependency-specific evidence wording. Two rounds of fresh-agent, real file/CLI work compared the old skill with an initial then compressed candidate. Both rounds tied at 4/4 per arm, with zero unnecessary evidence-verifier runs and no protected-file changes. No incremental effectiveness or cost-saving claim. Instruction length fell from 679 to 610 whitespace-delimited words; token/runtime effects were not measured. Raw private histories stay local. No plugin or runtime dependency was added. These engineering notes are not a newly published release.

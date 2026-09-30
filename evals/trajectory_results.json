@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "experiment_status": "completed",
+  "artifact_review": "completed",
+  "baseline": {
+    "commit": "41b7bed",
+    "skill_sha256": "f300bee22bb5c5411851e92f0548e67a8d6287696a10f83face2911e4187b7f4",
+    "whitespace_words": 610
+  },
+  "candidate": {
+    "skill_sha256": "cee17046be0e2ac24f7a4a6aa1737889919b21862da82c5ab10ea134d9f4cd0c",
+    "whitespace_words": 652,
+    "installed": false,
+    "development_status": "Exploratory after three compact discovery-family ceilings; original reproduced-failure gate explicitly amended before candidate testing.",
+    "freeze": "Before either richer-context trial and before implementer inspected heldout task, output, rubric or grades.",
+    "appended_after_phase_paragraph": "Use agreed dependencies: parallel delivery does not require finishing one branch before starting another.",
+    "replacement_shared_cause_paragraph": "When a handoff is suspect or similar defects recur, trace one concrete obligation from its accepted source through representation, execution, review and delivery. Find the first boundary that drops or changes it, not only the last visible symptom. Repair the existing owner rather than duplicate rules or bypass independent review. Check a changed case and, where relevant, an unchanged or unrelated-change case that should stay valid. Minimum sufficient repair is not necessarily the smallest diff. Bound this probe; avoid speculative redesign or a whole-system audit.",
+    "other_text_unchanged": true,
+    "decision": "Do not ship: no demonstrated incremental benefit; a localized candidate prose defect retained. No favorable-result hunting or plugin packaging."
+  },
+  "configuration": {
+    "recorded_primary_worker_model": "gpt-6-astra",
+    "reasoning_effort": "ultra",
+    "provider_backend_revision": null,
+    "initial_workers": 8,
+    "additional_fresh_field_continuations": 2,
+    "scope": "Selected engineering reconstructions, not a validated benchmark or representative field sample",
+    "skill_context": "Assigned guidance and relevant context explicitly read; natural activation/retrieval not evaluated",
+    "isolation": "Separate directories and instructional read boundaries, not a security sandbox",
+    "new_external_metered_api_calls": 0,
+    "tokens": null,
+    "comparable_elapsed_time": null,
+    "cost": null,
+    "human_rescue_effort": null
+  },
+  "discovery": [
+    {
+      "id": "field",
+      "kind": "Historical subsystem plus fictional data/offline consumer",
+      "arms": [
+        "current-skill-1",
+        "current-skill-2"
+      ],
+      "initial_checks_passed": [
+        8,
+        8
+      ],
+      "checks_per_run": 8,
+      "neutral_followup_checks_passed": [
+        8,
+        8
+      ],
+      "worker_test_counts_initial": [
+        19,
+        17
+      ],
+      "worker_test_counts_followup": [
+        24,
+        22
+      ],
+      "fresh_context": {
+        "product_edits": [
+          false,
+          false
+        ],
+        "tests_executed": [
+          8,
+          22
+        ],
+        "evidence_qualification": true
+      },
+      "interpretation": "Two trajectories on one family. Useful followup repairs are not original check failures or automatically waste. Test counts not comparable efficiency."
+    },
+    {
+      "id": "compact-research-teaching-web",
+      "arms": [
+        "current-skill"
+      ],
+      "http_and_restart_pass": true,
+      "web_delivered": true,
+      "lesson_delivered": true,
+      "worker_tests": 9,
+      "browser_smoke": "Separate artifact copy, actual Chrome prepare -> lesson hint/answer -> save -> return pending -> approve -> cached redisplay; one path only",
+      "interpretation": "Baseline success, not new-skill gain; Python surrogate not production R."
+    },
+    {
+      "id": "contract-recovery",
+      "arms": [
+        "current-skill"
+      ],
+      "quality_cases_passed": 7,
+      "quality_cases_total": 7,
+      "supported_requests": 2,
+      "substitute_calls": {
+        "seed": 10,
+        "worker": 4
+      },
+      "avoidable_recoveries": {
+        "seed": 4,
+        "worker": 0
+      },
+      "necessary_fault_repair_and_rereview": true,
+      "provider_request_original_tests_unchanged": true,
+      "worker_tests": 10,
+      "public_worker_patch": "contract_replay/observed-worker.patch",
+      "patch_reproduction": {
+        "quality_pass": true,
+        "substitute_calls": 4,
+        "avoidable_recoveries": 0,
+        "normalized_source_matches_worker": true
+      },
+      "interpretation": "Code repair by existing skill, not live LLM time/money or incremental instruction effect."
+    }
+  ],
+  "richer_context_pair": {
+    "chronology_messages": 44,
+    "launch_order": [
+      "candidate",
+      "baseline"
+    ],
+    "original_r_application_reproduced": false,
+    "frozen_grader_sha256": "47f9398bf7c5504f0fe76384a3a9160fd61a605f150dfeea21ffb529d44d9362",
+    "raw_frozen_results": {
+      "baseline": {
+        "web": true,
+        "lesson": false,
+        "full_pass": false,
+        "failed_assertion": "grader.py:110, unprescribed kind vocabulary"
+      },
+      "candidate": {
+        "web": false,
+        "lesson": false,
+        "full_pass": false,
+        "failed_assertions": [
+          "grader.py:87, whole restore-state equality including opaque pending.id",
+          "grader.py:110, unprescribed kind vocabulary"
+        ]
+      }
+    },
+    "independent_post_run_adjudication": {
+      "blinded": false,
+      "original_grader_and_scores_preserved": true,
+      "baseline": {
+        "semantic_web": true,
+        "semantic_lesson": true,
+        "browser_render_verified": false
+      },
+      "candidate": {
+        "semantic_web": true,
+        "semantic_lesson": true,
+        "browser_render_verified": false,
+        "substantive_restore_equal": true,
+        "opaque_approval_id_rotated": true,
+        "explicit_stale_approval_rejected": true
+      },
+      "scope": "Diagnostic correction after observing failures, not preregistered successful model trials; no worker guidance or implementation repair prompted."
+    },
+    "worker_tests": {
+      "baseline": 11,
+      "candidate": 12
+    },
+    "protected_inputs_unchanged": true,
+    "result": "No observed advantage on inspected semantic requirements; original frozen failures remain.",
+    "order_control": "Fixed candidate-first launch; not randomized or counterbalanced."
+  },
+  "literature_holdout_pair": {
+    "fiction": "All literature records/findings fictional; mechanism from a different private use episode. Delayed update and explicit narrowing authored controls.",
+    "condition_mapping_after_grade": {
+      "X": "candidate",
+      "Y": "baseline"
+    },
+    "reviewer": "Independent same-model artifact reviewer, mapping withheld, assigned guidance/private reports omitted. Blinding not guaranteed from prose.",
+    "baseline": {
+      "P0_artifacts": true,
+      "P1_artifacts": true,
+      "P2_artifacts": true,
+      "prior_outputs_preserved_at_P2": 3,
+      "minor_findings": []
+    },
+    "candidate": {
+      "P0_artifacts": true,
+      "P1_artifacts": true,
+      "P2_artifacts": true,
+      "prior_outputs_preserved_at_P2": 3,
+      "minor_findings": [
+        "One learning-note sentence says five studies although catalog and other text correctly distinguish four papers and one vendor source. Flagged, not retroactively changed frozen catalog-based acceptance."
+      ]
+    },
+    "frozen_rubric_changed": false,
+    "protected_sources_unchanged": true,
+    "blind_review_limits": "Saved completion reports and off-snapshot tools not assessed by masked reviewer. Separate trace audit and implementer report inspection are not blinded full-trajectory evaluation.",
+    "recurrence": "No observed catalog identity/evidence-state recurrence; no general recurrence-rate inference."
+  },
+  "integrity": {
+    "recorded_execution": "Real file edits and tests/HTTP runs inspected, not proposed plans only",
+    "trace_audited_primary_workers": 5,
+    "field_and_compact_metadata_separately_verified": true,
+    "no_observed_peer_grader_or_live_history_access": true,
+    "failed_attempts": [
+      "Both richer-context workers had an initial rejected duplicate handoff patch",
+      "Candidate corrected a test IndentationError before final suite passed",
+      "Evaluator recovered unusable WindowsApps Python alias",
+      "Evaluator restarted its own isolated preview after worker server ended",
+      "Evaluator patch command initially used wrong path, then skipped nested target; functional grade exposed unchanged seed, root-relative application then reproduced worker"
+    ],
+    "canonical_and_installed_sha256": "f300bee22bb5c5411851e92f0548e67a8d6287696a10f83face2911e4187b7f4"
+  },
+  "contract_evaluator": {
+    "original_frozen_grader_sha256": "c2a23a6ed06818dc689358862c4b336ebbf57984700687f8a95c49dcf1492026",
+    "original_frozen_probe_sha256": "dbbfb018385e73a81461254905a1987b72be59ed3a9a5b3b5a6af67ed08b7220",
+    "original_authored_controls": {
+      "seed": {
+        "calls": 10,
+        "recoveries": 4,
+        "quality": true
+      },
+      "general_repair": {
+        "calls": 4,
+        "recoveries": 0,
+        "quality": true
+      },
+      "symptom_only": {
+        "calls": 5,
+        "recoveries": 1,
+        "quality": true
+      },
+      "full_first": {
+        "calls": 4,
+        "recoveries": 0,
+        "quality": true
+      }
+    },
+    "original_limit": "Fault case requires Provider.repair and two review calls; can reject valid local correction. Public evaluator hardening tracked separately, never relabel original trial.",
+    "public_revision_status": "completed",
+    "public_revision": {
+      "id": "post_run_clean_review_audit_v2",
+      "timing": "Post model trial. Original private frozen evaluator and scores unchanged; no new model trials.",
+      "grader_sha256": "34bd3fe92b91f9755df56bad79c369d9d406c660aeb1b2b1793716ae429ac3c7",
+      "probe_sha256": "c730b45a221d2e1d7f47e0c9abf37e28f53e9ec4c0aa889fbf8c63c3cf68f2aa",
+      "changes": [
+        "Audit actual clean review against the entire unchanged request/capabilities/evidence, not a prescribed service-repair call count",
+        "Accept local correction before review or between failed and clean reviews",
+        "Reject unreviewed or ignored-review completion",
+        "Compare provider/request/originaltests to seed independently from runtime file stability"
+      ],
+      "authored_controls": [
+        {
+          "id": "raw_seed",
+          "quality": true,
+          "pass": false,
+          "calls": 10,
+          "recoveries": 4
+        },
+        {
+          "id": "reference",
+          "quality": true,
+          "pass": true,
+          "calls": 4,
+          "recoveries": 0
+        },
+        {
+          "id": "symptom_only",
+          "quality": true,
+          "pass": false,
+          "calls": 5,
+          "recoveries": 1
+        },
+        {
+          "id": "valid_full_first",
+          "quality": true,
+          "pass": true,
+          "calls": 4,
+          "recoveries": 0
+        },
+        {
+          "id": "valid_local_repair",
+          "quality": true,
+          "pass": true,
+          "calls": 4,
+          "recoveries": 0
+        },
+        {
+          "id": "valid_prevalidation",
+          "quality": true,
+          "pass": true,
+          "calls": 4,
+          "recoveries": 0
+        },
+        {
+          "id": "invalid_unreviewed",
+          "quality": false,
+          "pass": false,
+          "calls": 2,
+          "recoveries": 0
+        },
+        {
+          "id": "invalid_ignored_review",
+          "quality": false,
+          "pass": false,
+          "calls": 4,
+          "recoveries": 0
+        },
+        {
+          "id": "invalid_changed_request",
+          "quality": false,
+          "pass": false,
+          "calls": 4,
+          "recoveries": 0
+        },
+        {
+          "id": "invalid_changed_tests",
+          "quality": false,
+          "pass": false,
+          "calls": 4,
+          "recoveries": 0
+        }
+      ],
+      "expected_control_decisions_met": 10,
+      "actual_worker_rescore": {
+        "quality": true,
+        "pass": true,
+        "calls": 4,
+        "recoveries": 0,
+        "protected_files_unchanged": true,
+        "runtime_files_unchanged": true
+      },
+      "existing_patch_copy_rescore": {
+        "quality": true,
+        "pass": true,
+        "calls": 4,
+        "recoveries": 0,
+        "protected_files_unchanged": true,
+        "runtime_files_unchanged": true
+      },
+      "measure_definition": "Calls/recoveries cover only worker-service events on two supported non-fault requests; recovery = interpretations beyond first + service repair calls. Excludes local corrective computation and evaluator audit calls. Not total work."
+    }
+  },
+  "claims_not_established": [
+    "Incremental skill effectiveness",
+    "General equivalence or superiority",
+    "Validated psychological mechanism/involution construct",
+    "Natural invocation or missing-context retrieval",
+    "Live API cost or latency saving",
+    "Production R/browser E2E for richer arms",
+    "Representative user-work or human-learning improvement"
+  ],
+  "publication": "Only deliberately sanitized summaries and project-authored synthetic fixture/patch; no private conversation, original application source, credentials or personal paths.",
+  "next_hypothesis": "At the same observed decision boundary distinguish unavailable, not-retrieved and retrieved-but-ignored obligations/evidence. Consider an on-demand existing-handoff helper only if its added retrieval capability is needed; no background collector installed."
+}

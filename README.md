@@ -26,6 +26,8 @@ For example, a button fix and passing unit tests do not complete a request for a
 
 The unreleased source update adds shared-cause repair, phase prerequisites and dependency-specific evidence reuse. An unrelated edit does not invalidate every check; a file or completion claim alone is not an execution receipt. [Usage review, two-round evaluation and plugin decision (English / Korean)](docs/workflow-evaluation.md). Both rounds tied with the previous version; performance improvement remains unproven. This is not a new published release.
 
+The subsequent [trace-derived development cycle](docs/trajectory-evaluation.md) separates historical observations, reconstructed tasks, code-repair gains and incremental skill effects. Its [public offline recovery fixture](evals/contract_replay/README.md) checks that fewer calls preserve the complete answer and necessary review. Private conversations and original project code are not included.
+
 ### Philosophy and psychological principles
 
 **Involution** here means increasing internal complexity without progress toward the intended result—a working description, not a diagnosis or validated AI scale. The framing draws on Clifford Geertz's *Agricultural Involution*, originally about agricultural change in Indonesia. Applying it to AI workflows is an analogy, not validation or implementation of the whole theory. [Publisher information](https://www.ucpress.edu/book/9780520004597/agricultural-involution).
@@ -125,6 +127,8 @@ Codex 작업이 복잡해지기만 하고 원래 목표는 멀어질 때, 다음
 실험적인 커뮤니티 스킬입니다. [현재 릴리스](https://github.com/Assessment-Nerd/codex-involution-guard/releases/tag/v0.2.1) · [전체 릴리스 노트](https://github.com/Assessment-Nerd/codex-involution-guard/releases). 서버·API 키·백그라운드 프로세스·평가 프레임워크 없이 사용하는 지침형 스킬입니다. 판단을 돕지만 행동을 강제하거나 성능 향상·비용 절감을 보장하지 않습니다.
 
 작업본에는 **반복 결함의 공통 원인·영향 경로 확인, 단계 전환 전 미완료 의무 점검, 변경과 관련된 증거만 재검증**하는 보완이 들어 있습니다. 파일이 있거나 완료 문장이 있다는 이유만으로 실행을 인정하지 않으며, 무관한 수정 때문에 모든 검사를 다시 하지도 않습니다. [실사용 검토·두 차례 A/B·플러그인 판단(영어 / 한국어)](docs/workflow-evaluation.md). 새 릴리스 발행이나 성능 도약을 주장하는 것은 아닙니다.
+
+후속 [실제 기록 기반 개발·검증 과정](docs/trajectory-evaluation.md)에서는 과거 관찰, 재구성 과제, 코드 개선과 새 스킬의 효과를 구분합니다. [공개 오프라인 재현 과제](evals/contract_replay/README.md)는 호출 수가 줄어도 답의 완전성과 필요한 검토가 유지되는지 확인합니다. 비공개 대화와 원래 프로젝트 코드는 포함하지 않습니다.
 
 ### 철학과 행동과학을 실행 규칙으로
 

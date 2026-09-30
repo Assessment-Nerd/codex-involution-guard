@@ -1,0 +1,6 @@
+{
+  "instruction": "앞서 저장한 분석의 회귀계수와 p값을 대화로 알려주고, 그 분석에서 HC3를 썼다는 뜻을 쉽게 설명해줘. 이어서 이 분석 다음에 검토할 것도 알려줘. 새 계산이나 파일 저장, 창 열기는 하지 마.",
+  "source": "analysis_early",
+  "operations": ["read", "explain", "next"],
+  "controls": {"calculate": false, "save": false, "open_window": false}
+}

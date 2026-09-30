@@ -10,7 +10,7 @@ A targeted read-only review of recent private work found three useful patterns a
 
 - A common-state repair passed its bounded tests, but an adjacent export consumer still used stale state. The lesson is to inspect the affected producer/consumer boundary and a neighboring case, not to dismiss the earlier test or demand a whole-system rewrite.
 - Later interpretation/review stages repeatedly recovered information omitted upstream. The claimed latency diagnosis was not independently reproduced. Shared contracts are a cause to investigate, not a proven explanation for every slow run.
-- A new interface advanced while earlier engine and learning-delivery obligations remained unfinished. Merely listing pending work did not protect phase prerequisites.
+- A parallel learning-delivery obligation disappeared from a next-step plan while interface work became the focus; permanent omission from the final deliverable was not established. A later, deeper chronological audit corrected our initial interpretation: the accepted plan allowed lesson and minimum interface work in parallel, and the user authorized proceeding through the interface. Starting it was not itself a phase-order violation. The candidate failure is losing an uncancelled obligation from the plan, not breaking an invented sequential prohibition.
 
 Counterexamples matter: reusing an existing engine with a fresh-process check was useful; read-only diagnosis sometimes correctly led to no migration or deletion. Necessary verification and evidence-supported continuation remain protected. Raw conversations, project names, personal paths and credentials are not published.
 
@@ -73,7 +73,7 @@ The historical [recheck experiment](evaluation.md) changes an environment marker
 
 ### 무엇을 바꿨나
 
-비공개 기록을 제한적으로 검토한 결과, 공통부 수정 뒤 인접 내보내기 경로가 빠지는 문제, 앞 단계의 누락을 뒷 단계가 반복 복구하는 문제, 이전 의무가 남았는데 새 화면으로 넘어가는 문제가 있었습니다. 스킬의 인과적 실패율을 계산한 것은 아닙니다. 기존 검증이 실제로 통과한 사실과 후속 경로의 누락을 함께 인정합니다. 지연 원인의 세부 설명은 독립 재현하지 않았습니다.
+비공개 기록을 제한적으로 검토한 결과, 공통부 수정 뒤 인접 내보내기 경로가 빠지는 문제, 앞 단계의 누락을 뒷 단계가 반복 복구하는 문제, 화면 작업에 집중하면서 다음 단계 계획에서 병렬로 약속한 수업 자료가 빠지는 문제가 있었습니다. 최종 산출물에서도 영구적으로 누락됐다는 것은 입증하지 않았습니다. 후속 정밀 감사에서 초기 해석을 바로잡았습니다. 당시 합의는 수업 자료와 최소 웹 작업의 병렬 진행을 허용했고, 사용자도 웹까지 진행하도록 승인했습니다. 웹을 시작한 것 자체가 순서 위반은 아니며, 계획에서 취소되지 않은 병렬 의무의 누락이 검토 대상입니다. 스킬의 인과적 실패율을 계산한 것은 아닙니다. 기존 검증이 실제로 통과한 사실과 후속 경로의 누락을 함께 인정합니다. 지연 원인의 세부 설명은 독립 재현하지 않았습니다.
 
 따라서 같은 결함의 생성 원인과 영향을 받는 경로를 좁게 확인하고, 단계 전환의 선행 조건을 지키며, 변경된 의존성과 연결된 검증만 갱신하도록 합니다. 전체 재설계나 모든 테스트 재실행을 요구하지 않습니다. 필요한 재검증과, 측정 결과 아무것도 바꾸지 않는 판단도 보호합니다. 심리학적 기제를 새로 입증했다는 의미가 아닙니다.
 
