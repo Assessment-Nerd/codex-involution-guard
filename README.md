@@ -28,6 +28,8 @@ The unreleased source update adds shared-cause repair, phase prerequisites and d
 
 The subsequent [trace-derived development cycle](docs/trajectory-evaluation.md) separates historical observations, reconstructed tasks, code-repair gains and incremental skill effects. Its [public offline recovery fixture](evals/contract_replay/README.md) checks that fewer calls preserve the complete answer and necessary review. Private conversations and original project code are not included.
 
+A [12-worker Luna comparison](docs/luna-evaluation.md) tested no added skill, v0.2.1 and current source. All passed the integration task's behavioral checks; full three-stage report success was 2/2, 2/2 and 1/2 respectively. One latest-skill worker changed an archived output outside the request. No latest-skill advantage is established. The new [short staged replay](evals/delivery_replay/README.md) separates receipt reuse from full checks; runtime instructions remain unchanged.
+
 ### Philosophy and psychological principles
 
 **Involution** here means increasing internal complexity without progress toward the intended result—a working description, not a diagnosis or validated AI scale. The framing draws on Clifford Geertz's *Agricultural Involution*, originally about agricultural change in Indonesia. Applying it to AI workflows is an analogy, not validation or implementation of the whole theory. [Publisher information](https://www.ucpress.edu/book/9780520004597/agricultural-involution).
@@ -129,6 +131,8 @@ Codex 작업이 복잡해지기만 하고 원래 목표는 멀어질 때, 다음
 작업본에는 **반복 결함의 공통 원인·영향 경로 확인, 단계 전환 전 미완료 의무 점검, 변경과 관련된 증거만 재검증**하는 보완이 들어 있습니다. 파일이 있거나 완료 문장이 있다는 이유만으로 실행을 인정하지 않으며, 무관한 수정 때문에 모든 검사를 다시 하지도 않습니다. [실사용 검토·두 차례 A/B·플러그인 판단(영어 / 한국어)](docs/workflow-evaluation.md). 새 릴리스 발행이나 성능 도약을 주장하는 것은 아닙니다.
 
 후속 [실제 기록 기반 개발·검증 과정](docs/trajectory-evaluation.md)에서는 과거 관찰, 재구성 과제, 코드 개선과 새 스킬의 효과를 구분합니다. [공개 오프라인 재현 과제](evals/contract_replay/README.md)는 호출 수가 줄어도 답의 완전성과 필요한 검토가 유지되는지 확인합니다. 비공개 대화와 원래 프로젝트 코드는 포함하지 않습니다.
+
+[Luna 작업자 12개 비교](docs/luna-evaluation.md)에서는 노말·v0.2.1·최신의 통합 과제 기능 검사가 모두 성공했고, 3단계 보고서 작업은 각각 2/2·2/2·1/2였습니다. 최신 한 작업자가 요청 밖의 보관본까지 수정했으며, 최신의 우위는 확인되지 않았습니다. [짧은 단계형 평가 과제](evals/delivery_replay/README.md)는 증거 재사용과 전체 재검사를 구분합니다. 실행 스킬 지침은 그대로 유지했습니다.
 
 ### 철학과 행동과학을 실행 규칙으로
 

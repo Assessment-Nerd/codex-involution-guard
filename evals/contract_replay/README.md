@@ -38,6 +38,8 @@ python evals/contract_replay/grader.py --materialize-reference PATH_TO_NEW_DIREC
 
 ### Interpretation
 
+**Instruction clarification after the Luna comparison:** the seed README now explicitly requires byte-identical provider/request/tests and a separate file for added tests. The six Luna trials used the earlier ambiguous wording, “preserve the original tests”; five retained original assertions but added tests in the same file. Their frozen raw failures remain recorded separately from successful product behavior. This wording correction is prospective, not a retroactive authority violation or a new model trial. The grader implementation is unchanged.
+
 The unchanged seed uses ten substitute-service calls across two supported requests; an authored general repair uses four, with all seven quality/control cases satisfied. One current-skill worker also achieved four. This demonstrates a code repair by the existing skill, **not improvement from a new skill version**. Each worker is one development episode, not seven independent samples. The neighboring capability is a prospective transfer check, not another recorded historical failure.
 
 [The observed worker patch](observed-worker.patch) records that worker's actual application change. Applying it to a fresh seed copy and grading the result reproduced four calls and zero avoidable recoveries. Its reconstructed source matches the worker's source after normalizing line endings. Keep this solution outside any new worker's inputs.
@@ -49,6 +51,8 @@ The public evaluator is a **post-run revision**, `post_run_clean_review_audit_v2
 This public fixture contains project-authored synthetic code and records, not the private original application or raw conversations. Identifying narrative details were removed from the seed README. The shorter, clearer repository can make the task easier than real work. See [the complete cycle and limits](../../docs/trajectory-evaluation.md).
 
 ## 한국어
+
+**Luna 비교 후 지시문 명확화:** 이제 초기 README에 서비스·요청·테스트 파일의 바이트 동일성과 추가 검사의 별도 파일 작성을 명시했습니다. 기존 6개 시험에는 ‘원래 테스트 보존’이라는 모호한 표현이 있었고, 5개 작업자가 원 assertion을 유지하면서 같은 파일에 검사를 추가했습니다. 원 채점 실패와 제품 동작 성공을 구분하여 보존합니다. 이번 명확화를 이전 작업자의 명백한 권한 위반으로 소급 적용하지 않으며, 채점 코드 변경이나 새 모델 시험도 아닙니다.
 
 실제 연구 보조 도구에서 관찰한 통합 문제를 작게 재구성한 **선택형 개발 시험**입니다. 스킬 설치 시 따라오는 실행 의존성이 아니며 API·서버·키·외부 프레임워크가 필요하지 않습니다. Windows의 Python 3.12에서 확인했습니다.
 

@@ -1,5 +1,9 @@
 # Design and evidence
 
+## Unreleased — fast Luna three-condition comparison, 2026-09-30
+
+[English/Korean report](luna-evaluation.md) · [Sanitized individual results](../evals/luna_results.json) · [New staged task](../evals/delivery_replay/README.md). Twelve independent Luna/high workers compared no added skill, released v0.2.1 and latest610word source, with two repetitions per condition in two families. Contract behavior passed for every worker; frozen test-byte failures remain separate from independent preservation adjudication. Full report trajectories passed2/2,2/2,1/2: one latest worker restyled an archived output, upheld by a condition-uninformed scope review. No incremental skill gain or general causal ranking. Actual short-cycle times and session counters are reported with limits; receipt lookups are not counted as full repeated checks. Runtime unchanged, no new candidate/plugin/release. The contract README now clarifies byte protection prospectively; raw scores and grader code remain unchanged.
+
 ## Unreleased — trace-derived development cycle, 2026-09-30
 
 [English/Korean report](trajectory-evaluation.md) · [Sanitized results](../evals/trajectory_results.json) · [Reusable offline task](../evals/contract_replay/README.md). Private usage records informed three discovery families, a richer chronological-context A/B and an independently prepared literature continuation/control. No incremental benefit justified installing the exploratory 652-word candidate; the 610-word runtime stays unchanged. Existing-skill code repair reduced deterministic substitute calls from 10 to 4 across two requests with required quality and review retained—not a skill-effect or live-cost claim. Raw grader failures, subsequent adjudication, candidate prose defect, executed failures and scope/activation limits are preserved. Optional evaluation assets add no runtime dependency or plugin. This is development evidence, not a release or established quantum leap.

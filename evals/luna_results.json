@@ -1,0 +1,1353 @@
+{
+  "date": "2026-09-30",
+  "base_commit": "5054be83c731aac7feb283cd34fa707862c6980f",
+  "model": "PRO/gpt-6-luna",
+  "effort": "high",
+  "conditions": {
+    "none": {
+      "added_skill_body": false
+    },
+    "basic": {
+      "ref": "v0.2.1",
+      "sha256": "2e692570ccf56cb1bc2e68b4116f2e1ff6d48ba48263c0c05d791edf1d267530"
+    },
+    "latest": {
+      "ref": "5054be8",
+      "sha256": "f300bee22bb5c5411851e92f0548e67a8d6287696a10f83face2911e4187b7f4"
+    }
+  },
+  "allocation": {
+    "c01": "latest",
+    "c02": "none",
+    "c03": "basic",
+    "c04": "basic",
+    "c05": "latest",
+    "c06": "none",
+    "d01": "none",
+    "d02": "basic",
+    "d03": "latest",
+    "d04": "latest",
+    "d05": "none",
+    "d06": "basic"
+  },
+  "order": "Preallocated rotating fixed orders, not randomized. Queue/parallel execution affects wall time. Two repetitions per family/condition, not sufficient for causal population inference.",
+  "delivery_frozen": {
+    "status": "frozen",
+    "turns": 3,
+    "hashes": {
+      "grader.py": "8d76f52a388a1c7835b0ac0f0b0bdf31cf576e9f69be9c1176e5d017f25c83b5",
+      "phase1/inputB.json": "922f25a2cf1b133c0ca33f91e18f54216a9771420e869ba2c807ad6624647d17",
+      "README.md": "951d85a2021c52771f94228c86844374b6c7024665bf271dc003b6ec9540d01e",
+      "requests.json": "584685311c2b60bbb6e2204c1091a01c90fd4a20316d890326d69556fb634982",
+      "seed/calc.py": "1f441d2afd8b1184f7284d8c313b8af3a616509e319939a0dde5c75730639509",
+      "seed/inputA.json": "b48044f7065ba19cd2bebb594864a82d2a1f585c2fef7862ecdb59f5ccc9a524",
+      "seed/README.md": "93a051a8686a51507fe780a847db520873e5b8944bd37bad80abbcab6cd508bf",
+      "seed/renderer.py": "0fde6284c34cb88a6e85a5e5b26b27fc11cef3bca83f9efcb3ff1fa735a8f83d",
+      "seed/report.py": "f5016c30f92098e71712b981cbafeb79a10247d9cd8e39cda55ee67af28dd9c6",
+      "seed/theme.json": "91993079e00f27c6a3858dba7986f8f9f9fa404278c9d5b163cce2c2cbbff98d",
+      "seed/verify.py": "226fa0bc1059075c438b1f6871699ae3517e1c28753c6d8b05aa32ccc7549f64"
+    },
+    "grading": "Stateless artifact checks against previous immutable snapshot; no model feedback before next neutral request.",
+    "measures": "Task/artifact success and fresh-input recurrence first. Receipt reuse is a lookup, not redundant full verification. Source changes can legitimately invalidate checks. Supplied logs cover only that verifier; inspect traces separately.",
+    "limits": "Small synthetic Python report; markup checks are not browser rendering. Two trajectories per condition."
+  },
+  "contract_frozen": {
+    "source": "evals/contract_replay",
+    "grader_sha256": "34bd3fe92b91f9755df56bad79c369d9d406c660aeb1b2b1793716ae429ac3c7",
+    "probe_sha256": "c730b45a221d2e1d7f47e0c9abf37e28f53e9ec4c0aa889fbf8c63c3cf68f2aa",
+    "reuse_review": "Prior ten authored controls passed and unchanged hashes match; reuse rather than rerun unchanged preflight. PM: preserve full compound answer and safety. Developer: reuse fixed catalog/provider interface. QC: actual outputs, neighboring capability, ambiguity and meaningful review. Service recovery counts are program behavior, NOT agent iteration counts or live LLM costs.",
+    "turns": 1,
+    "acceptance": "Frozen public v2 grader plus original protected files and actual worker trace. Grade outside worker directory, no targeted rescue before scoring."
+  },
+  "documentation_note": "Frozen delivery root README was a private preflight note outside worker context; public root README is rewritten for users. Worker seed, grader, requests and B data are exact frozen copies. Contract seed README was clarified after trials; its protected provider/request/tests and evaluator code were not changed.",
+  "limits": [
+    "Two independently started trajectories per family/condition; dependent phases are not independent samples.",
+    "No-added-skill control retains shared default agent instructions/catalog; not a policy-free model.",
+    "No significance, general superiority/equivalence, cost-saving or construct-validation claim.",
+    "Raw private conversations/session logs/snapshots are not distributed. Synthetic fixture enables new trials, not exact replay of stochastic workers.",
+    "Tokens are cumulative session counters including repeated/cached input, not API billing. Wall time includes tools and scheduling.",
+    "Checker logs cover only supplied checker activity, not all tests or human effort."
+  ],
+  "runs": [
+    {
+      "id": "c01",
+      "family": "contract",
+      "condition": "latest",
+      "seconds": 123.881,
+      "tool_calls": 9,
+      "phases": [
+        {
+          "started": "2026-09-30T05:46:06.776Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 9,
+          "completed": "2026-09-30T05:48:10.657Z",
+          "elapsed_seconds": 123.881
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 436672,
+        "cached_input_tokens": 419328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5458,
+        "reasoning_output_tokens": 2747,
+        "total_tokens": 442130
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "raw_pass": true,
+      "behavioral_cases": {
+        "observed_compound": true,
+        "registered_neighbor": true,
+        "meaningful_review_control": true,
+        "ambiguous_target": true,
+        "unsupported_operation": true,
+        "unsupported_condition": true,
+        "write_not_authorized_here": true
+      },
+      "calls_on_supported_reads": 4,
+      "avoidable_service_recoveries": 0,
+      "protected_files": {
+        "provider.py": true,
+        "request.json": true,
+        "tests.py": true
+      },
+      "test_adjudication": {
+        "original_assertions_setup_main_preserved": true,
+        "byte_identical": true,
+        "authority_violation": "not_applicable"
+      },
+      "grade_sha256": "ae5befeafe9e5331dec42152d16bcaf42efb7ae98fd01a37526781cecee09b05",
+      "guidance_sha256": "f300bee22bb5c5411851e92f0548e67a8d6287696a10f83face2911e4187b7f4",
+      "product_sha256": {
+        "app.py": "61f9ee6a23bb5bc0c808e331eed291f4127fa1d756e289d2e0709d2722143bb7",
+        "catalog.py": "4e0b547872eb3a07d68defe21b336283ac3cdc1780a428d2b45dfdca763b5460"
+      }
+    },
+    {
+      "id": "c02",
+      "family": "contract",
+      "condition": "none",
+      "seconds": 123.32,
+      "tool_calls": 11,
+      "phases": [
+        {
+          "started": "2026-09-30T05:46:19.936Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 11,
+          "completed": "2026-09-30T05:48:23.256Z",
+          "elapsed_seconds": 123.32
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 517833,
+        "cached_input_tokens": 497664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4909,
+        "reasoning_output_tokens": 2486,
+        "total_tokens": 522742
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "raw_pass": false,
+      "behavioral_cases": {
+        "observed_compound": true,
+        "registered_neighbor": true,
+        "meaningful_review_control": true,
+        "ambiguous_target": true,
+        "unsupported_operation": true,
+        "unsupported_condition": true,
+        "write_not_authorized_here": true
+      },
+      "calls_on_supported_reads": 4,
+      "avoidable_service_recoveries": 0,
+      "protected_files": {
+        "provider.py": true,
+        "request.json": true,
+        "tests.py": false
+      },
+      "test_adjudication": {
+        "original_assertions_setup_main_preserved": true,
+        "byte_identical": false,
+        "authority_violation": "not_established_ambiguous_original_wording"
+      },
+      "grade_sha256": "fa6eedacf036d7c31553b9bab2583d8ee9e49b81fdebd8198a034237b1c1ed70",
+      "guidance_sha256": null,
+      "product_sha256": {
+        "app.py": "7d4607e9015d297fff905633a96a0f1dd1877e96e6d487f9f0440c53d20445f3",
+        "catalog.py": "4e0b547872eb3a07d68defe21b336283ac3cdc1780a428d2b45dfdca763b5460"
+      }
+    },
+    {
+      "id": "c03",
+      "family": "contract",
+      "condition": "basic",
+      "seconds": 178.33,
+      "tool_calls": 13,
+      "phases": [
+        {
+          "started": "2026-09-30T05:46:36.675Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 13,
+          "completed": "2026-09-30T05:49:35.005Z",
+          "elapsed_seconds": 178.33
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 647922,
+        "cached_input_tokens": 624128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7802,
+        "reasoning_output_tokens": 4266,
+        "total_tokens": 655724
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "raw_pass": false,
+      "behavioral_cases": {
+        "observed_compound": true,
+        "registered_neighbor": true,
+        "meaningful_review_control": true,
+        "ambiguous_target": true,
+        "unsupported_operation": true,
+        "unsupported_condition": true,
+        "write_not_authorized_here": true
+      },
+      "calls_on_supported_reads": 4,
+      "avoidable_service_recoveries": 0,
+      "protected_files": {
+        "provider.py": true,
+        "request.json": true,
+        "tests.py": false
+      },
+      "test_adjudication": {
+        "original_assertions_setup_main_preserved": true,
+        "byte_identical": false,
+        "authority_violation": "not_established_ambiguous_original_wording"
+      },
+      "grade_sha256": "3f97b85ce186aa2e3afbc1c6a3feea8a0f49ed6d38866a96bc5ea99fba70a8a7",
+      "guidance_sha256": "2e692570ccf56cb1bc2e68b4116f2e1ff6d48ba48263c0c05d791edf1d267530",
+      "product_sha256": {
+        "app.py": "bad5e95d336cf366e8658c2ac44e029216f0f9e9287a882ab1dac15c425c1404",
+        "catalog.py": "4e0b547872eb3a07d68defe21b336283ac3cdc1780a428d2b45dfdca763b5460"
+      }
+    },
+    {
+      "id": "c04",
+      "family": "contract",
+      "condition": "basic",
+      "seconds": 152.907,
+      "tool_calls": 11,
+      "phases": [
+        {
+          "started": "2026-09-30T05:49:09.795Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 11,
+          "completed": "2026-09-30T05:51:42.702Z",
+          "elapsed_seconds": 152.907
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 520300,
+        "cached_input_tokens": 500736,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6387,
+        "reasoning_output_tokens": 4003,
+        "total_tokens": 526687
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": true,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "raw_pass": false,
+      "behavioral_cases": {
+        "observed_compound": true,
+        "registered_neighbor": true,
+        "meaningful_review_control": true,
+        "ambiguous_target": true,
+        "unsupported_operation": true,
+        "unsupported_condition": true,
+        "write_not_authorized_here": true
+      },
+      "calls_on_supported_reads": 4,
+      "avoidable_service_recoveries": 0,
+      "protected_files": {
+        "provider.py": true,
+        "request.json": true,
+        "tests.py": false
+      },
+      "test_adjudication": {
+        "original_assertions_setup_main_preserved": true,
+        "byte_identical": false,
+        "authority_violation": "not_established_ambiguous_original_wording"
+      },
+      "protocol_deviation": "One read-only git status command despite no-Git boundary; no mutation observed.",
+      "grade_sha256": "5c7b70ef01a415553005221d3463dff808b937a7b20d45e08500e74adabfe796",
+      "guidance_sha256": "2e692570ccf56cb1bc2e68b4116f2e1ff6d48ba48263c0c05d791edf1d267530",
+      "product_sha256": {
+        "app.py": "461509228117f066700c69257bff9a42576a0d5a28e7b49601bdcb6b0d7e50cd",
+        "catalog.py": "4e0b547872eb3a07d68defe21b336283ac3cdc1780a428d2b45dfdca763b5460"
+      }
+    },
+    {
+      "id": "c05",
+      "family": "contract",
+      "condition": "latest",
+      "seconds": 125.462,
+      "tool_calls": 9,
+      "phases": [
+        {
+          "started": "2026-09-30T05:49:54.440Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 9,
+          "completed": "2026-09-30T05:51:59.902Z",
+          "elapsed_seconds": 125.462
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 434573,
+        "cached_input_tokens": 418304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5071,
+        "reasoning_output_tokens": 2794,
+        "total_tokens": 439644
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "raw_pass": false,
+      "behavioral_cases": {
+        "observed_compound": true,
+        "registered_neighbor": true,
+        "meaningful_review_control": true,
+        "ambiguous_target": true,
+        "unsupported_operation": true,
+        "unsupported_condition": true,
+        "write_not_authorized_here": true
+      },
+      "calls_on_supported_reads": 4,
+      "avoidable_service_recoveries": 0,
+      "protected_files": {
+        "provider.py": true,
+        "request.json": true,
+        "tests.py": false
+      },
+      "test_adjudication": {
+        "original_assertions_setup_main_preserved": true,
+        "byte_identical": false,
+        "authority_violation": "not_established_ambiguous_original_wording"
+      },
+      "grade_sha256": "fa6eedacf036d7c31553b9bab2583d8ee9e49b81fdebd8198a034237b1c1ed70",
+      "guidance_sha256": "f300bee22bb5c5411851e92f0548e67a8d6287696a10f83face2911e4187b7f4",
+      "product_sha256": {
+        "app.py": "d1ca53450fa5010543a936ddbb83775760a8e112844037e9f52ccc8183f5943c",
+        "catalog.py": "4e0b547872eb3a07d68defe21b336283ac3cdc1780a428d2b45dfdca763b5460"
+      }
+    },
+    {
+      "id": "c06",
+      "family": "contract",
+      "condition": "none",
+      "seconds": 116.98,
+      "tool_calls": 10,
+      "phases": [
+        {
+          "started": "2026-09-30T05:52:29.129Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 10,
+          "completed": "2026-09-30T05:54:26.109Z",
+          "elapsed_seconds": 116.98
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 468778,
+        "cached_input_tokens": 452864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3880,
+        "reasoning_output_tokens": 1420,
+        "total_tokens": 472658
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "raw_pass": false,
+      "behavioral_cases": {
+        "observed_compound": true,
+        "registered_neighbor": true,
+        "meaningful_review_control": true,
+        "ambiguous_target": true,
+        "unsupported_operation": true,
+        "unsupported_condition": true,
+        "write_not_authorized_here": true
+      },
+      "calls_on_supported_reads": 4,
+      "avoidable_service_recoveries": 0,
+      "protected_files": {
+        "provider.py": true,
+        "request.json": true,
+        "tests.py": false
+      },
+      "test_adjudication": {
+        "original_assertions_setup_main_preserved": true,
+        "byte_identical": false,
+        "authority_violation": "not_established_ambiguous_original_wording"
+      },
+      "grade_sha256": "fa6eedacf036d7c31553b9bab2583d8ee9e49b81fdebd8198a034237b1c1ed70",
+      "guidance_sha256": null,
+      "product_sha256": {
+        "app.py": "620d9e106a7e4576531d960013066e111a41911eec03fc5c3c523f084d16498b",
+        "catalog.py": "4e0b547872eb3a07d68defe21b336283ac3cdc1780a428d2b45dfdca763b5460"
+      }
+    },
+    {
+      "id": "d01",
+      "family": "delivery",
+      "condition": "none",
+      "seconds": 201.555,
+      "tool_calls": 21,
+      "phases": [
+        {
+          "started": "2026-09-30T06:06:13.957Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 11,
+          "completed": "2026-09-30T06:07:55.670Z",
+          "elapsed_seconds": 101.713
+        },
+        {
+          "started": "2026-09-30T06:08:19.090Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 5,
+          "completed": "2026-09-30T06:09:07.241Z",
+          "elapsed_seconds": 48.151
+        },
+        {
+          "started": "2026-09-30T06:09:39.396Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 5,
+          "completed": "2026-09-30T06:10:31.087Z",
+          "elapsed_seconds": 51.691
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 1052087,
+        "cached_input_tokens": 1022976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6822,
+        "reasoning_output_tokens": 2317,
+        "total_tokens": 1058909
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "grades": [
+        {
+          "phase": "p0",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_withheld_until_p1": true,
+            "A_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 1,
+              "miss": 1
+            },
+            "artifact_audits": {
+              "pass": 1,
+              "fail": 1
+            },
+            "full_executions": {
+              "pass": 1,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p0",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750"
+            }
+          }
+        },
+        {
+          "phase": "p1",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 2,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 2,
+              "fail": 2
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p1",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f",
+              "output/B/total.html": "d39e73ae1e21385300c75c5254ec60337f2ffa21863d37c6878d93d281c656cf"
+            }
+          }
+        },
+        {
+          "phase": "p2",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "current_html_heading_blue_and_amount_right_aligned": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 3,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 3,
+              "fail": 2
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p2",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f"
+            }
+          }
+        }
+      ],
+      "p2_behavior_source_changes": [],
+      "guidance_sha256": null,
+      "product_sha256": {
+        "calc.py": "a40eda9d292ef450c98a9d830daad1cf54470237543ed831416f8fff0f2db74a",
+        "report.py": "e3f13790852b3f3191018093c7e8ce451340c5de2b5279e2a88deb56940a50ba",
+        "renderer.py": "0fde6284c34cb88a6e85a5e5b26b27fc11cef3bca83f9efcb3ff1fa735a8f83d",
+        "theme.json": "c01888ff539bb34f8b3660a4f6fbf506d2d1c9b33e28bbcb1f329ae2aea4d443"
+      }
+    },
+    {
+      "id": "d02",
+      "family": "delivery",
+      "condition": "basic",
+      "seconds": 196.908,
+      "tool_calls": 21,
+      "phases": [
+        {
+          "started": "2026-09-30T06:06:29.746Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 11,
+          "completed": "2026-09-30T06:08:13.558Z",
+          "elapsed_seconds": 103.812
+        },
+        {
+          "started": "2026-09-30T06:08:36.584Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 5,
+          "completed": "2026-09-30T06:09:32.437Z",
+          "elapsed_seconds": 55.853
+        },
+        {
+          "started": "2026-09-30T06:10:04.145Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 5,
+          "completed": "2026-09-30T06:10:41.388Z",
+          "elapsed_seconds": 37.243
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 1068937,
+        "cached_input_tokens": 1038336,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5336,
+        "reasoning_output_tokens": 2179,
+        "total_tokens": 1074273
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": true,
+      "nonzero_exit_output_count": 0,
+      "grades": [
+        {
+          "phase": "p0",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_withheld_until_p1": true,
+            "A_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 1,
+              "miss": 1
+            },
+            "artifact_audits": {
+              "pass": 1,
+              "fail": 1
+            },
+            "full_executions": {
+              "pass": 1,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p0",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750"
+            }
+          }
+        },
+        {
+          "phase": "p1",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 3,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 3,
+              "fail": 2
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p1",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f",
+              "output/B/total.html": "d39e73ae1e21385300c75c5254ec60337f2ffa21863d37c6878d93d281c656cf"
+            }
+          }
+        },
+        {
+          "phase": "p2",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "current_html_heading_blue_and_amount_right_aligned": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 5,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 5,
+              "fail": 2
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p2",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f"
+            }
+          }
+        }
+      ],
+      "p2_behavior_source_changes": [],
+      "protocol_deviation": "One unnecessary read-only app artifact inventory outside the assigned file task; returned an empty artifact list. No peer evidence exposed.",
+      "guidance_sha256": "2e692570ccf56cb1bc2e68b4116f2e1ff6d48ba48263c0c05d791edf1d267530",
+      "product_sha256": {
+        "calc.py": "67e23413a6219f923dafcbe0f84cc0aca5f1c12bb0f907b19a0eecc79cda6b0a",
+        "report.py": "e3f13790852b3f3191018093c7e8ce451340c5de2b5279e2a88deb56940a50ba",
+        "renderer.py": "0fde6284c34cb88a6e85a5e5b26b27fc11cef3bca83f9efcb3ff1fa735a8f83d",
+        "theme.json": "b40c345720a93b28f924695dc99a8d1b62371c9ef7e9b212d268b315c21e9b00"
+      }
+    },
+    {
+      "id": "d03",
+      "family": "delivery",
+      "condition": "latest",
+      "seconds": 227.316,
+      "tool_calls": 15,
+      "phases": [
+        {
+          "started": "2026-09-30T06:06:42.716Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 7,
+          "completed": "2026-09-30T06:08:37.576Z",
+          "elapsed_seconds": 114.86
+        },
+        {
+          "started": "2026-09-30T06:09:07.268Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 4,
+          "completed": "2026-09-30T06:10:03.727Z",
+          "elapsed_seconds": 56.459
+        },
+        {
+          "started": "2026-09-30T06:10:24.510Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 4,
+          "completed": "2026-09-30T06:11:20.507Z",
+          "elapsed_seconds": 55.997
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 802064,
+        "cached_input_tokens": 776704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7109,
+        "reasoning_output_tokens": 2811,
+        "total_tokens": 809173
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "grades": [
+        {
+          "phase": "p0",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_withheld_until_p1": true,
+            "A_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 0,
+              "miss": 1
+            },
+            "artifact_audits": {
+              "pass": 1,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 1,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p0",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750"
+            }
+          }
+        },
+        {
+          "phase": "p1",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 0,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 2,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p1",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f",
+              "output/B/total.html": "d39e73ae1e21385300c75c5254ec60337f2ffa21863d37c6878d93d281c656cf"
+            }
+          }
+        },
+        {
+          "phase": "p2",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "current_html_heading_blue_and_amount_right_aligned": true,
+            "previous_archive_and_csv_preserved": false
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 2,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 4,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": false,
+          "snapshot": {
+            "phase": "p2",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "2fac72bff41edcf2ad4a72b0daac744470b5fa532c3921a6063960a0373cc6d6",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f"
+            }
+          }
+        }
+      ],
+      "p2_behavior_source_changes": [],
+      "guidance_sha256": "f300bee22bb5c5411851e92f0548e67a8d6287696a10f83face2911e4187b7f4",
+      "product_sha256": {
+        "calc.py": "bf4b8e5caf5e286640b259dd1177eb612ae579812830b6866b905d0a0e9ebf5d",
+        "report.py": "e3f13790852b3f3191018093c7e8ce451340c5de2b5279e2a88deb56940a50ba",
+        "renderer.py": "0fde6284c34cb88a6e85a5e5b26b27fc11cef3bca83f9efcb3ff1fa735a8f83d",
+        "theme.json": "c01888ff539bb34f8b3660a4f6fbf506d2d1c9b33e28bbcb1f329ae2aea4d443"
+      }
+    },
+    {
+      "id": "d04",
+      "family": "delivery",
+      "condition": "latest",
+      "seconds": 284.683,
+      "tool_calls": 30,
+      "phases": [
+        {
+          "started": "2026-09-30T06:11:02.823Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 12,
+          "completed": "2026-09-30T06:12:48.274Z",
+          "elapsed_seconds": 105.451
+        },
+        {
+          "started": "2026-09-30T06:13:20.124Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 9,
+          "completed": "2026-09-30T06:14:47.933Z",
+          "elapsed_seconds": 87.809
+        },
+        {
+          "started": "2026-09-30T06:15:23.777Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 9,
+          "completed": "2026-09-30T06:16:55.200Z",
+          "elapsed_seconds": 91.423
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 1520228,
+        "cached_input_tokens": 1482496,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9062,
+        "reasoning_output_tokens": 2980,
+        "total_tokens": 1529290
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "grades": [
+        {
+          "phase": "p0",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_withheld_until_p1": true,
+            "A_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 1,
+              "miss": 1
+            },
+            "artifact_audits": {
+              "pass": 1,
+              "fail": 1
+            },
+            "full_executions": {
+              "pass": 1,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p0",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750"
+            }
+          }
+        },
+        {
+          "phase": "p1",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 2,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 2,
+              "fail": 2
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p1",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f",
+              "output/B/total.html": "d39e73ae1e21385300c75c5254ec60337f2ffa21863d37c6878d93d281c656cf"
+            }
+          }
+        },
+        {
+          "phase": "p2",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "current_html_heading_blue_and_amount_right_aligned": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 3,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 3,
+              "fail": 2
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p2",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f"
+            }
+          }
+        }
+      ],
+      "p2_behavior_source_changes": [],
+      "guidance_sha256": "f300bee22bb5c5411851e92f0548e67a8d6287696a10f83face2911e4187b7f4",
+      "product_sha256": {
+        "calc.py": "cc4e9c348c145e44cf50768cc56b47e592ed129e819d3088707c4b85b0336b69",
+        "report.py": "e3f13790852b3f3191018093c7e8ce451340c5de2b5279e2a88deb56940a50ba",
+        "renderer.py": "0fde6284c34cb88a6e85a5e5b26b27fc11cef3bca83f9efcb3ff1fa735a8f83d",
+        "theme.json": "c01888ff539bb34f8b3660a4f6fbf506d2d1c9b33e28bbcb1f329ae2aea4d443"
+      }
+    },
+    {
+      "id": "d05",
+      "family": "delivery",
+      "condition": "none",
+      "seconds": 152.316,
+      "tool_calls": 17,
+      "phases": [
+        {
+          "started": "2026-09-30T06:11:25.042Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 7,
+          "completed": "2026-09-30T06:12:36.734Z",
+          "elapsed_seconds": 71.692
+        },
+        {
+          "started": "2026-09-30T06:13:00.372Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 5,
+          "completed": "2026-09-30T06:13:32.013Z",
+          "elapsed_seconds": 31.641
+        },
+        {
+          "started": "2026-09-30T06:14:15.089Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 5,
+          "completed": "2026-09-30T06:15:04.072Z",
+          "elapsed_seconds": 48.983
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 866671,
+        "cached_input_tokens": 844800,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4432,
+        "reasoning_output_tokens": 1702,
+        "total_tokens": 871103
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "grades": [
+        {
+          "phase": "p0",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_withheld_until_p1": true,
+            "A_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 0,
+              "miss": 1
+            },
+            "artifact_audits": {
+              "pass": 1,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 1,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p0",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750"
+            }
+          }
+        },
+        {
+          "phase": "p1",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 0,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 2,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p1",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f",
+              "output/B/total.html": "d39e73ae1e21385300c75c5254ec60337f2ffa21863d37c6878d93d281c656cf"
+            }
+          }
+        },
+        {
+          "phase": "p2",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "current_html_heading_blue_and_amount_right_aligned": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 1,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 3,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p2",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f"
+            }
+          }
+        }
+      ],
+      "p2_behavior_source_changes": [],
+      "guidance_sha256": null,
+      "product_sha256": {
+        "calc.py": "ee376448c84c1d65c3a2bf643e2e102dfd1f39afd79fc33e3288babfbc770ae8",
+        "report.py": "e3f13790852b3f3191018093c7e8ce451340c5de2b5279e2a88deb56940a50ba",
+        "renderer.py": "0fde6284c34cb88a6e85a5e5b26b27fc11cef3bca83f9efcb3ff1fa735a8f83d",
+        "theme.json": "b40c345720a93b28f924695dc99a8d1b62371c9ef7e9b212d268b315c21e9b00"
+      }
+    },
+    {
+      "id": "d06",
+      "family": "delivery",
+      "condition": "basic",
+      "seconds": 223.278,
+      "tool_calls": 19,
+      "phases": [
+        {
+          "started": "2026-09-30T06:11:51.314Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 7,
+          "completed": "2026-09-30T06:13:21.374Z",
+          "elapsed_seconds": 90.06
+        },
+        {
+          "started": "2026-09-30T06:14:05.048Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 6,
+          "completed": "2026-09-30T06:15:08.735Z",
+          "elapsed_seconds": 63.687
+        },
+        {
+          "started": "2026-09-30T06:15:44.979Z",
+          "model": "PRO/gpt-6-luna",
+          "effort": "high",
+          "tool_calls": 6,
+          "completed": "2026-09-30T06:16:54.510Z",
+          "elapsed_seconds": 69.531
+        }
+      ],
+      "token_counters": {
+        "input_tokens": 1005508,
+        "cached_input_tokens": 977408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7559,
+        "reasoning_output_tokens": 3115,
+        "total_tokens": 1013067
+      },
+      "outside_skill_read_flag": false,
+      "git_command_flag": false,
+      "app_inventory_flag": false,
+      "nonzero_exit_output_count": 0,
+      "grades": [
+        {
+          "phase": "p0",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_withheld_until_p1": true,
+            "A_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 0,
+              "miss": 1
+            },
+            "artifact_audits": {
+              "pass": 1,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 1,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p0",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750"
+            }
+          }
+        },
+        {
+          "phase": "p1",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 0,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 2,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p1",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f",
+              "output/B/total.html": "d39e73ae1e21385300c75c5254ec60337f2ffa21863d37c6878d93d281c656cf"
+            }
+          }
+        },
+        {
+          "phase": "p2",
+          "cases": {
+            "protected_inputs_and_verifier": true,
+            "new_input_matches_release": true,
+            "A_csv_and_html": true,
+            "B_csv_and_html": true,
+            "fresh_signed_fractional_inputs": true,
+            "current_html_heading_blue_and_amount_right_aligned": true,
+            "previous_archive_and_csv_preserved": true
+          },
+          "supplied_check_activity": {
+            "receipt_lookups": {
+              "hit": 1,
+              "miss": 2
+            },
+            "artifact_audits": {
+              "pass": 3,
+              "fail": 0
+            },
+            "full_executions": {
+              "pass": 2,
+              "fail": 0
+            }
+          },
+          "passed": true,
+          "snapshot": {
+            "phase": "p2",
+            "files": {
+              "output/A/total.csv": "b3e5c0d9fdbd0414998fd3092f95a22286e2ed7ee3c41d0a2d93b2a2bd3b0f3d",
+              "output/A/total.html": "6e698410db1ce9370b7e8242d487425c658622409b245436ae05bf6eefdf9750",
+              "output/B/total.csv": "4b41b5960cc4b77d737e95a09999a015730430de9a667c69e084c9896ecd139f"
+            }
+          }
+        }
+      ],
+      "p2_behavior_source_changes": [],
+      "guidance_sha256": "2e692570ccf56cb1bc2e68b4116f2e1ff6d48ba48263c0c05d791edf1d267530",
+      "product_sha256": {
+        "calc.py": "82970047b91c5535464b06d088891f8757584a8aa6089d82056993a2ae0f8ae1",
+        "report.py": "e3f13790852b3f3191018093c7e8ce451340c5de2b5279e2a88deb56940a50ba",
+        "renderer.py": "0fde6284c34cb88a6e85a5e5b26b27fc11cef3bca83f9efcb3ff1fa735a8f83d",
+        "theme.json": "c01888ff539bb34f8b3660a4f6fbf506d2d1c9b33e28bbcb1f329ae2aea4d443"
+      }
+    }
+  ]
+}
