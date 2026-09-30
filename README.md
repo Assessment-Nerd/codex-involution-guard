@@ -15,12 +15,16 @@ Experimental community skill. [Current release](https://github.com/Assessment-Ne
 | A small fix is mistaken for completion of a larger request | Preserve the original outcome and identify remaining work |
 | More tools, rules, documents or reviews are proposed | Consider reuse, consolidation or omission before adding complexity |
 | An attempt repeatedly fails | Retry with new evidence or changed conditions; otherwise consider another method |
+| Related defects recur across several outputs | Inspect the shared cause and affected consumers; check fresh regeneration, not only the latest symptom |
+| Work shifts to a new phase or interface | Check prerequisites and unfinished obligations before treating the new surface as progress on the whole request |
 | Valid checks are about to be repeated | Reuse trustworthy evidence covering the current requirement, artifact version and relevant environment |
 | “Efficiency” would remove necessary verification | Retain safety, validity, source and recovery checks |
 
 It does not continuously monitor projects, remember every conversation, collect unrelated histories, automatically route models or impose spending caps. A method can change without silently abandoning the user's goal. Routine edits should not create extra meetings, reports or trackers.
 
 For example, a button fix and passing unit tests do not complete a request for a working onboarding-to-export flow. Conversely, a verified flow need not be rerun merely for reassurance if its evidence still applies.
+
+The unreleased source update adds shared-cause repair, phase prerequisites and dependency-specific evidence reuse. An unrelated edit does not invalidate every check; a file or completion claim alone is not an execution receipt. [Usage review, two-round evaluation and plugin decision (English / Korean)](docs/workflow-evaluation.md). Both rounds tied with the previous version; performance improvement remains unproven. This is not a new published release.
 
 ### Philosophy and psychological principles
 
@@ -119,6 +123,8 @@ Codex 작업이 복잡해지기만 하고 원래 목표는 멀어질 때, 다음
 모든 프로젝트를 상시 감시하거나 모든 대화를 자동으로 기억하지 않습니다. 자동 모델 배정·비용 상한 강제 기능도 아닙니다. 접근 가능한 관련 맥락을 바탕으로 판단을 돕고, 사용자 목표를 버리지 않은 채 방법을 바꾸도록 안내합니다.
 
 실험적인 커뮤니티 스킬입니다. [현재 릴리스](https://github.com/Assessment-Nerd/codex-involution-guard/releases/tag/v0.2.1) · [전체 릴리스 노트](https://github.com/Assessment-Nerd/codex-involution-guard/releases). 서버·API 키·백그라운드 프로세스·평가 프레임워크 없이 사용하는 지침형 스킬입니다. 판단을 돕지만 행동을 강제하거나 성능 향상·비용 절감을 보장하지 않습니다.
+
+작업본에는 **반복 결함의 공통 원인·영향 경로 확인, 단계 전환 전 미완료 의무 점검, 변경과 관련된 증거만 재검증**하는 보완이 들어 있습니다. 파일이 있거나 완료 문장이 있다는 이유만으로 실행을 인정하지 않으며, 무관한 수정 때문에 모든 검사를 다시 하지도 않습니다. [실사용 검토·두 차례 A/B·플러그인 판단(영어 / 한국어)](docs/workflow-evaluation.md). 새 릴리스 발행이나 성능 도약을 주장하는 것은 아닙니다.
 
 ### 철학과 행동과학을 실행 규칙으로
 

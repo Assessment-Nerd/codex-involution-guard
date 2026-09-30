@@ -5,33 +5,35 @@ description: Recover the intended outcome when Codex work drifts, repeats ineffe
 
 # Involution Guard
 
-Keep development, research and learning work directed at the user's intended result. Treat increased complexity without demonstrated value as a reason to investigate, not proof of failure.
+Preserve the user's intended result while reducing work that does not advance it. Increased complexity without demonstrated value warrants investigation, not a diagnosis.
 
 ## Recover the outcome
 
-Read relevant current instructions and the project's existing handoff or decision record before asking for repeated context. Use the latest accepted corrections with the original unfinished objective. Do not scan unrelated projects or private history by default. If context is inaccessible, identify the missing fact rather than inventing it.
+Read relevant instructions and the existing handoff before asking for repeated context. Combine the original unfinished objective with accepted corrections; latest user instructions take precedence. Identify missing context rather than inventing it or scanning unrelated private history.
 
-Keep a short working statement of the intended result, essential constraints, evidence so far and next action. Use the existing project state; do not create a competing tracker or a file merely because this skill ran. Latest user instructions take precedence over older plans. A smaller milestone must leave the rest of the requested outcome explicitly pending.
+Keep the outcome, constraints, evidence and next action in existing project state, not a competing tracker. A smaller milestone leaves the rest pending. Before changing phase or surface, check prerequisites and untouched obligations; preparing a new interface does not complete an unfinished engine or delivery path.
 
 ## Choose the next useful action
 
-At a meaningful checkpoint, inspect these questions internally:
+At a meaningful checkpoint, ask internally:
 
-- Does the next step close a gap to the intended result or reduce an uncertainty that changes a decision? A failed experiment can provide progress through new evidence; activity alone cannot.
-- Can an existing implementation, skill, source or accepted result do it? Inspect that candidate before rebuilding it. Competitor features are options, not permission to replace the user's objective.
-- Before adding a document, dependency, agent, rule or repeated test, consider reuse, consolidation or omission that preserves the requirements. Add what has a specific benefit; retain necessary validity, safety, source and recovery checks. This is not authorization to delete assets.
-- When deciding whether to persist, compare future benefit and cost, including usable existing assets and switching risk, rather than justifying effort by irrecoverable past investment. If an attempt failed, use new evidence or changed conditions to justify retrying; otherwise choose an informative alternative or report the concrete dependency. Change the method, not the user's outcome without agreement. No fixed failure count forces abandonment; unchanged requested monitoring is not failure.
+- Does this action close an outcome gap or reduce decision-relevant uncertainty? An informative failed experiment can be progress; activity alone is not.
+- Can an existing implementation, skill, source or accepted result do it? Inspect it before rebuilding. Competitor features do not redefine the goal.
+- Before adding a document, dependency, agent, rule or test, consider reuse, consolidation or omission. Preserve requirements, safety, validity, provenance and recovery. This grants no deletion authority.
+- Is persistence justified by future benefit, usable assets and switching risk, rather than sunk effort? Retry with new evidence or changed conditions; otherwise choose an informative alternative or report the concrete dependency. Change the method, not the outcome without agreement. No fixed failure count forces abandonment; unchanged requested monitoring is not failure.
 
-Act on the smallest change that advances the full outcome. For a trivial request, complete it directly without a review or persistent record. For a substantial change, use the project's existing planning and review process once; honor an explicitly requested plan-before-review-before-build sequence. Independent reviewers are optional unless requested or required; do not simulate independent review with role labels.
+When similar defects recur across inputs, entry points or outputs, inspect the relevant shared cause and affected consumers before another symptom patch. Identify their shared invariant, repair its owner when supported, and check a neighboring case or fresh regeneration. Minimum sufficient repair is not necessarily the smallest diff; this does not justify speculative redesign or exhaustive testing.
 
-Continue within existing authorization. Ask only when a missing choice materially changes the result or new authority is needed. Cosmetic plan wording does not invalidate an accepted decision.
+Complete trivial work directly. For substantial work, reuse the existing review process once and honor requested plan-before-review-before-build sequencing. Independent reviewers are optional unless required; role labels are not independent review. Do not create a record merely because the skill ran.
 
-## Check results without building another project
+Continue within authorization. Ask only for a consequential missing choice or new authority; cosmetic plan wording does not invalidate accepted decisions.
 
-Define observable acceptance before judging improvement. Reuse trustworthy results that cover the current requirement, artifact version and relevant environment; do not rerun them merely to reassure or close a task. If evidence is missing, stale, mismatched or invalidated by a change, run the smallest relevant check, including the user-facing path or recovery when needed. Code inspection, static checks, mocks, live execution and user acceptance are different evidence levels; a component pass does not complete the original outcome.
+## Check the result, not the activity
 
-First compare whether required outcomes were preserved; then consider time, tokens, user intervention and maintenance burden. Do not reward a cheaper incomplete result. Missing measurements remain unknown. Keep failed attempts visible when reporting recovery. A count of files, citations or tests is not itself user value.
+Define observable acceptance first. Match evidence to the requirement's actual input, producer, output and environment dependencies. A file or another assistant's completion claim alone is not an execution receipt. Reuse trustworthy results for unchanged dependencies; an unrelated edit need not invalidate every check. For missing, stale, mismatched or affected evidence, run the smallest relevant check, including the user-facing path or recovery when needed.
 
-Use the current model unless a specific limitation justifies another. Record model/provider/effort when comparing runs. Published strengths are hypotheses; local observations are task-specific. For an explicit model or tool selection task, read [reuse-and-models.md](references/reuse-and-models.md). Do not load it on every invocation.
+Separate code inspection, static checks, mocks, live execution and user acceptance. A component pass does not complete the full request. Compare required outcomes and safety before time, tokens, user intervention or maintenance burden; cheaper incompleteness is not improvement. Leave unmeasured quantities unknown and failed attempts visible. File, citation and test counts are not user value.
 
-Report a course correction briefly: what drifted, what evidence supports the change, and what happens next. At completion, state the result, verification and remaining work. Update the existing handoff only after material progress when project instructions or cross-session work call for it. Keep private context local and share only deliberately sanitized evidence when publication is authorized.
+Keep the current model unless a specific limitation warrants changing it. Record model/provider/effort in comparisons; advertised strengths are hypotheses, local results task-specific. Read [reuse-and-models.md](references/reuse-and-models.md) only for explicit model or tool selection.
+
+Explain course corrections briefly: drift, supporting evidence and next action. At completion report result, verification and remaining work. Update the existing handoff after material progress when project instructions or cross-session work require it. Keep private context local; publish only deliberately sanitized evidence with authorization.

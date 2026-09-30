@@ -1,5 +1,9 @@
 # Design and evidence
 
+## Unreleased — usage-informed workflow cycle, 2026-09-30
+
+[English/Korean review, complete methods and caveats](workflow-evaluation.md) · [Sanitized artifacts and results](../evals/workflow_results.json). Targeted actual-use audit informed shared-cause repair, phase prerequisites and dependency-specific evidence wording. Two rounds of fresh-agent, real file/CLI work compared the old skill with an initial then compressed candidate. Both rounds tied at 4/4 per arm, with zero unnecessary evidence-verifier runs and no protected-file changes. No incremental effectiveness or cost-saving claim. Instruction length fell from 679 to 610 whitespace-delimited words; token/runtime effects were not measured. Raw private histories stay local. No plugin or runtime dependency was added. These engineering notes are not a newly published release.
+
 ## v0.2.1 — metered restricted-action test
 
 See [the task design, upstream benchmark review, budget and complete results](evaluation.md). A 24-episode API test compared no skill, v0.2 and a narrow evidence-reuse correction. Success was 3/8, 3/8 and 5/8 respectively; full check counts did not decline and candidate API cost slightly increased. Total uncached-rate estimate $0.01189395, 40 calls. This is a small GPT-5.4 nano restricted-action experiment, not a Codex CLI benchmark or proof of general benefit. All cases and candidate wording were fixed before the first API call; no live rerun followed results.
